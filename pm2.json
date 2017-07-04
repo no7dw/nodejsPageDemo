@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "name": "p2p-3000",
+      "script": "./app.js",
+      "watch": false,
+      "env": {
+        "NODE_ENV": "dev",
+        "MONGODB": "mongodb://localhost:27017/p2p"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
