@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=dev FINANCE_URI=mongodb://@localhost:27017/finance node app.js"
+    "start": "NODE_ENV=dev FINANCE_URI=mongodb://@localhost:27017/finance nodemon app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.0",
     "config": "^1.26.1",
+    "koa": "^2.3.0",
+    "koa-router": "^7.2.1",
     "mongoose": "^4.9.6",
     "mongoose-paginate": "^5.0.3",
     "mongoose-unique-validator": "^1.0.5",
